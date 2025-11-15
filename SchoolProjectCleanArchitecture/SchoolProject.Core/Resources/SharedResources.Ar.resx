@@ -162,4 +162,19 @@
   <data name="DepartmentId" xml:space="preserve">
     <value>رقم القسم </value>
   </data>
+  <data name="PasswordNotEqualConfirmPass" xml:space="preserve">
+    <value>الباسورد غير متطابق</value>
+  </data>
+  <data name="EmailIsExist" xml:space="preserve">
+    <value>الايميل موجود</value>
+  </data>
+  <data name="UserNameIsExist" xml:space="preserve">
+    <value>اسم المستخدم موجود بالفعل </value>
+  </data>
+  <data name="FaildToAddUser" xml:space="preserve">
+    <value>فشل اضافه المستخدم </value>
+  </data>
+  <data name="TryToRegisterAgain" xml:space="preserve">
+    <value>حاول التسجيل مره اخرى</value>
+  </data>
 </root>
