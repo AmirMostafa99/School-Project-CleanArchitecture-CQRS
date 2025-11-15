@@ -177,4 +177,7 @@
   <data name="TryToRegisterAgain" xml:space="preserve">
     <value>Try To Register Again</value>
   </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>Update Failed</value>
+  </data>
 </root>
