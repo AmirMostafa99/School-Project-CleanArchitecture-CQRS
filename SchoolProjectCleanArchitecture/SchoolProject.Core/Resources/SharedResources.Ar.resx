@@ -177,4 +177,7 @@
   <data name="TryToRegisterAgain" xml:space="preserve">
     <value>حاول التسجيل مره اخرى</value>
   </data>
+  <data name="UpdateFailed" xml:space="preserve">
+    <value>فشل التعديل </value>
+  </data>
 </root>
