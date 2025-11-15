@@ -7,6 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Features\User\**" />
+    <EmbeddedResource Remove="Features\User\**" />
+    <None Remove="Features\User\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
     <PackageReference Include="EntityFramework" Version="5.0.0" />
     <PackageReference Include="FluentValidation" Version="11.12.0" />
@@ -28,7 +34,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Features\ApplicationUser\Queries\Handlers\" />
+    <Folder Include="Features\ApplicationUser\Queries\Models\" />
     <Folder Include="Features\Department\Commands\" />
+    <Folder Include="Mapping\ApplicationUser\QueriesMapping\" />
     <Folder Include="Mapping\Departments\CommandMapping\" />
   </ItemGroup>
 
