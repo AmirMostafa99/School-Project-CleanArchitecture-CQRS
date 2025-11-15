@@ -23,6 +23,7 @@
         public const string FaildToAddUser = "FaildToAddUser";
         public const string TryToRegisterAgain = "TryToRegisterAgain";
         public const string UpdateFailed = "UpdateFailed";
+        public const string DeletedFailed = "DeletedFailed";
 
     }
 }

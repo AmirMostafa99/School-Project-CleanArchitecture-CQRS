@@ -6,7 +6,7 @@ using SchoolProject.Data.AppMetaData;
 
 namespace SchoolProject.Api.Controllers
 {
-    [Route("api/[controller]")]
+
     [ApiController]
     public class ApplicationUserController : AppControllerBase
     {
@@ -35,6 +35,12 @@ namespace SchoolProject.Api.Controllers
         {
             var response = await Mediator.Send(command);
             return NewResult(response);
+        }
+
+        [HttpDelete(Router.ApplicationUserRouting.Delete)]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            return NewResult(await Mediator.Send(new DeleteUserCommand(id)));
         }
     }
 }
