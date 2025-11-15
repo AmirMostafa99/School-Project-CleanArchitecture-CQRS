@@ -156,4 +156,10 @@
   <data name="BadRequest" xml:space="preserve">
     <value>هذ الطلب لا يمكن فهمه </value>
   </data>
+  <data name="IsNotExist" xml:space="preserve">
+    <value>هذا المصدر غير موجود </value>
+  </data>
+  <data name="DepartmentId" xml:space="preserve">
+    <value>رقم القسم </value>
+  </data>
 </root>

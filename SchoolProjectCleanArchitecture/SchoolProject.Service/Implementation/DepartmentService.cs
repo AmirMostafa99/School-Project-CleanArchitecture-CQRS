@@ -27,6 +27,11 @@ namespace SchoolProject.Service.Implementation
                                                         .Include(x => x.Instructor).FirstOrDefaultAsync();
             return student;
         }
+
+        public async Task<bool> IsDepartmentIdExist(int departmentId)
+        {
+            return await _departmentRepository.GetTableNoTracking().AnyAsync(x => x.DID.Equals(departmentId));
+        }
         #endregion
     }
 }

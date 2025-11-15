@@ -156,4 +156,10 @@
   <data name="BadRequest" xml:space="preserve">
     <value>request can't be understand</value>
   </data>
+  <data name="IsNotExist" xml:space="preserve">
+    <value>This Resourse Is Not Exist</value>
+  </data>
+  <data name="DepartmentId" xml:space="preserve">
+    <value>Department Id</value>
+  </data>
 </root>
