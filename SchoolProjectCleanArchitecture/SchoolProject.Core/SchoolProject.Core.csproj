@@ -34,10 +34,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\ApplicationUser\Queries\Handlers\" />
-    <Folder Include="Features\ApplicationUser\Queries\Models\" />
     <Folder Include="Features\Department\Commands\" />
-    <Folder Include="Mapping\ApplicationUser\QueriesMapping\" />
     <Folder Include="Mapping\Departments\CommandMapping\" />
   </ItemGroup>
 
