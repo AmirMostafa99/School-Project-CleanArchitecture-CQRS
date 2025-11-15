@@ -180,4 +180,7 @@
   <data name="UpdateFailed" xml:space="preserve">
     <value>فشل التعديل </value>
   </data>
+  <data name="DeletedFailed" xml:space="preserve">
+    <value>فشل حذف العنصر </value>
+  </data>
 </root>
