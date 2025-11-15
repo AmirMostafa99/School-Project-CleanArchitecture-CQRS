@@ -29,7 +29,8 @@ builder.Services.AddAutoMapper(typeof(StudentProfile).Assembly);
 #region Dependancy injection
 builder.Services.AddInfrastructureDependencies()
                 .AddServiceDependencies()
-                .AddCoreDependencies();
+                .AddCoreDependencies()
+                .AddServiceRegisteration();
 #endregion
 
 
