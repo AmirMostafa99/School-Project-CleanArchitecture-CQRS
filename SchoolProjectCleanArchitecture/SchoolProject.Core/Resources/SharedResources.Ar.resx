@@ -183,4 +183,7 @@
   <data name="DeletedFailed" xml:space="preserve">
     <value>فشل حذف العنصر </value>
   </data>
+  <data name="ChangePasswordFailed" xml:space="preserve">
+    <value>فشل تغيير كلمه السر</value>
+  </data>
 </root>

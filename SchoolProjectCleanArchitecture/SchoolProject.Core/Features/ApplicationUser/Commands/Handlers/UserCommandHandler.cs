@@ -13,7 +13,8 @@ namespace SchoolProject.Core.Features.ApplicationUser.Commands.Handlers
     public class UserCommandHandler : ResponseHandler,
          IRequestHandler<AddUserCommand, Response<string>>,
          IRequestHandler<EditUserCommand, Response<string>>,
-         IRequestHandler<DeleteUserCommand, Response<string>>
+         IRequestHandler<DeleteUserCommand, Response<string>>,
+        IRequestHandler<ChangeUserPasswordCommand, Response<string>>
 
 
     {
@@ -101,6 +102,27 @@ namespace SchoolProject.Core.Features.ApplicationUser.Commands.Handlers
             //in case of Failure
             if (!result.Succeeded) return BadRequest<string>(_sharedResources[SharedResourcesKeys.DeletedFailed]);
             return Success((string)_sharedResources[SharedResourcesKeys.Deleted]);
+        }
+
+        public async Task<Response<string>> Handle(ChangeUserPasswordCommand request, CancellationToken cancellationToken)
+        {
+            // get user by id
+            var user = await _userManager.FindByIdAsync(request.Id.ToString());
+            // ceck if user no exist return notfound
+            if (user == null) return NotFound<string>();
+            // change user password
+            var result = await _userManager.ChangePasswordAsync(user, request.CurrentPassword, request.NewPassword);
+            //var user1 = await _userManager.HasPasswordAsync(user);
+            //await _userManager.RemovePasswordAsync(user);
+            //await _userManager.AddPasswordAsync(user, request.NewPassword)
+
+            // check if change password failed
+            if (!result.Succeeded)
+                return BadRequest<string>(result.Errors.FirstOrDefault().Description);
+
+            // return success
+            return Success((string)_sharedResources[SharedResourcesKeys.Success]);
+
         }
 
 

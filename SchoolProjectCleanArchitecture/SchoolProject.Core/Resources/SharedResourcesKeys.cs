@@ -24,6 +24,7 @@
         public const string TryToRegisterAgain = "TryToRegisterAgain";
         public const string UpdateFailed = "UpdateFailed";
         public const string DeletedFailed = "DeletedFailed";
+        public const string ChangePasswordFailed = "ChangePasswordFailed";
 
     }
 }
